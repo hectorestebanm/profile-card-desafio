@@ -24,21 +24,9 @@ body
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--Dark-cyan);
-    position: relative;
-}
-
-.profile-imagen-top
-{
-    position: absolute;
-    top: 0;
-    transform: translate(-50%, -50%);
-}
-
-.profile-imagen-botton
-{
-    position: absolute;
-    bottom: 0;
-    transform: translate(50%, 50%);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 31vw bottom 56vh, left 36vw top 34vh;
 }
 
 .profile
@@ -160,10 +148,19 @@ body
     color: var(--Dark-gray);
 }
 
+@media (min-width: 480px)
+{
+    body
+    {
+        background-position: right 49vw bottom 42vh, left 46vw top 48vh;
+    }
+}
+
 .attribution
 {
     font-size: 11px;
     text-align: center;
+    color: white;
 }
 
 .attribution a
